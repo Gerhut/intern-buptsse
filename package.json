@@ -17,6 +17,7 @@
     "compile-mw-less": "*"
   },
   "devDependencies": {
+    "node-dev": "*",
     "mocha": "*",
     "chai": "*"
   },

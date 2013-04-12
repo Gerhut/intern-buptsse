@@ -47,6 +47,9 @@ Steps:
 
 5. Run `index.js` or `npm start`
 
+If you want to improve this project, I recommend you install `node-dev` to
+run `index.js`.
+
 ### Browser ###
 
 Any **Modern Browser** is supported. 
