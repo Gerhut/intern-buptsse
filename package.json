@@ -1,0 +1,28 @@
+{
+  "name": "intern-buptsse",
+  "version": "0.0.1",
+  "description": "Internship management system designed for buptsse",
+  "keywords": ["application", "web", "intern", "buptsse"],
+  "repository": "git://github.com/shinohane/intern-buptsse.git",
+  "author": "Shinohane <imandry.c@gmail.com> (http://shinohane.com)",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "underscore": "*",
+    "pdfkit": "*",
+    "csv": "*",
+    "mongoose": "*",
+    "trigger.js": "*",
+    "require-all": "*",
+    "compile-mw-less": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "scripts": {
+      "start": "node ./index.js",
+      "test": "mocha -t 30000 -R spec"
+  },
+  "engines": { "node": ">= 0.8.0" }
+}
