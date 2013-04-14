@@ -14,7 +14,8 @@
     "mongoose": "*",
     "trigger.js": "*",
     "require-all": "*",
-    "compile-mw-less": "*"
+    "compile-mw-less": "*",
+    "compile-mw-jade-runtime": "*"
   },
   "devDependencies": {
     "node-dev": "*",
