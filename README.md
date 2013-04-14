@@ -43,9 +43,7 @@ Working Flow
    Student begin the internship in company
 
    * 1st week, upload enterprise acknowledge table
-
    * Following weeks, upload weekly report
-
    * Last week, upload intern summary report
 
 6. Professor Grading Phase
