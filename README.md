@@ -13,12 +13,103 @@ Roles
 
 * Administrator
 
-* Enterprise Agent(Teacher)
+* Enterprise Agent(Teacher/Professor)
 
 * Student
 
 Working Flow
 ------------
+
+### Phases ###
+
+1. Position Information Submission Phase
+
+   Professor upload/modify Position information and Enterprise information
+
+2. Position Application Phase
+
+   Student send application to a position
+
+3. Professor Selection Phase
+
+   Professor select students for a position who applied to the position
+
+4. Professor Post-selection Phase
+
+   Professor select students for opening position from available students
+
+5. Intern Phase
+
+   Student begin the internship in company
+
+   * 1st week, upload enterprise acknowledge table
+
+   * Following weeks, upload weekly report
+
+   * Last week, upload intern summary report
+
+6. Professor Grading Phase
+
+   Professor grade students for their work during internship
+
+7. Finalize Phase
+
+   Open grade to students, get an overview report
+
+### Check Points ###
+
+* Phase 1
+
+  Professor ensure the information of position
+
+  Registered students receive email to start selection
+
+* Phase 2
+
+  Students receive email to acknowledge their application
+
+  Professor receive email inform the selection phase
+
+* Phase 3 - 4
+
+  Students receive email for acception/adjustment
+
+* Phase 5, each week
+
+  Acknowledge email to student after upload a report
+
+* Phase 6
+
+  Inform student to get their grade
+
+### Preparation Works ###
+
+**Administrator** 
+
+1. Import the account information (id and name)
+
+2. Set the schedule (time-table)
+
+   We have several phase in this system, a schedule states the start time
+   and deadline of a phase.
+
+**Other Users**
+
+* Register
+
+* Change Password
+
+* Edit Profile
+
+  Including following information
+
+  + Email Address
+
+  + Telephone Number
+
+  + Change Photo
+
+  + Upload Resume (CV) *For Student*
 
 Deployment
 ----------
