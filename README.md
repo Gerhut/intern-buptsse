@@ -145,7 +145,9 @@ run `index.js`.
 
 Any **Modern Browser** is supported. 
 
-*It's sorry if u use IE 6-9, they should never be supported.*
+*It's sorry if u use IE 6-9, they should never be full supported.*
+
+*Only support for IE>=8 to complete the basic bussiness flow.*
 
 For Chinese user using a browser with multi-layout engine, pls switch your
 browser to the "Fast Mode" if it's not turned on by default.
