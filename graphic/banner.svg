@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="banner.svg"
+   inkscape:export-filename="/home/trinity/workspace/intern-buptsse/graphic/banner.png"
+   inkscape:export-xdpi="120"
+   inkscape:export-ydpi="120">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -75,25 +78,25 @@
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="226"
-       y="376.36218"
+       y="386.36218"
        id="text3778"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3780"
          x="226"
-         y="376.36218"
+         y="386.36218"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:YouYuan;-inkscape-font-specification:YouYuan">北京邮电大学软件学院</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="225"
-       y="407.36218"
+       y="417.36218"
        id="text3782"
        sodipodi:linespacing="0%"><tspan
          sodipodi:role="line"
          id="tspan3784"
          x="225"
-         y="407.36218"
+         y="417.36218"
          style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:YouYuan;-inkscape-font-specification:YouYuan Bold">实习实训管理系统</tspan></text>
     <path
        style="fill:#000000;fill-rule:nonzero;stroke:none"
