@@ -1,0 +1,44 @@
+@import "color";
+@import "elements";
+
+#login {
+
+    position: relative;
+    top: 24px;
+
+    .boxtitle {
+        font-size: 20px;
+        padding: 12px 24px;
+        border-bottom: 1px solid @border-color;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+
+    width: 268px;
+    border: 1px solid @border-color;
+    padding-bottom: 8px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    input {
+        margin: 8px 24px;
+        width: 206px;
+    }
+
+    .action {
+        margin: 8px 24px;
+        float: right;
+
+        button {
+            margin-left: 12px;
+        }
+    }
+}
+
+.white-well {
+    background: white;
+    .rounded(5px);
+    .drop-shadow;
+}
