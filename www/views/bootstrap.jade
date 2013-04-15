@@ -1,0 +1,22 @@
+doctype default
+include mixins
+html
+  head
+    block head
+      block meta
+        //- Metadata Section, Encoding & ViewPort
+        meta(charset="utf-8")
+        mixin viewport
+        mixin ua-compatible
+      link(rel="shortcut icon", href="img/favicon.ico")
+      block style
+        mixin stylesheet("bt/css/bootstrap.css")
+        mixin stylesheet("bt/css/bootstrap-responsive.css")
+        mixin stylesheet("bt/css/datepicker.css")
+  body
+    block content
+    block script
+      mixin javascript("js/jquery.min.js")
+      mixin javascript("bt/js/bootstrap-datepicker.js")
+      //- Jade-Runtime
+      mixin javascript("runtime.min.js")

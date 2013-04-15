@@ -1,21 +1,8 @@
-doctype default
-include mixins
-html
-  head
-    block head
-      block meta
-        //- Metadata Section, Encoding & ViewPort
-        meta(charset="utf-8")
-        mixin viewport
-        mixin ua-compatible
-      title 北京邮电大学软件学院实习管理系统
-      link(rel="shortcut icon", href="img/favicon.ico")
-      block styles
-        mixin stylesheet("bt/css/bootstrap.css")
-        mixin stylesheet("bt/css/bootstrap-responsive.css")
-        mixin stylesheet("bt/css/datepicker.css")
-  body
-    block content
-    block scripts
-      mixin javascript("js/jquery.min.js")
-      mixin javascript("bt/js/bootstrap-datepicker.js")
+extends bootstrap
+append head
+  title 北京邮电大学软件学院实习管理系统
+append style
+  mixin stylesheet("style/ui.css")
+append script
+block content
+
