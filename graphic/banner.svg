@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="308.91183"
+   height="83.492241"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3875"
+       is_visible="true"
+       pattern="m 51,-21 c 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="42.786835"
+     inkscape:cy="-99.877327"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-bottom="10"
+     fit-margin-right="10" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-149.21316,-349.04771)">
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="226"
+       y="376.36218"
+       id="text3778"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3780"
+         x="226"
+         y="376.36218"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:YouYuan;-inkscape-font-specification:YouYuan">北京邮电大学软件学院</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="225"
+       y="407.36218"
+       id="text3782"
+       sodipodi:linespacing="0%"><tspan
+         sodipodi:role="line"
+         id="tspan3784"
+         x="225"
+         y="407.36218"
+         style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:YouYuan;-inkscape-font-specification:YouYuan Bold">实习实训管理系统</tspan></text>
+    <path
+       style="fill:#000000;fill-rule:nonzero;stroke:none"
+       d="m 160,422.36218 c -0.24162,-0.37048 0.40057,-1.33993 1.99297,-2.67528 1.59239,-1.33536 4.17328,-2.99308 7.57175,-4.67551 3.40314,-1.69196 7.67054,-3.44506 12.59001,-5.18341 3.86491,-1.36681 8.14225,-2.73052 12.70542,-4.16847 3.42992,-1.08257 6.98472,-2.16678 10.51088,-3.48428 1.27166,-0.47742 2.48815,-0.95722 3.60246,-1.50472 0.83072,-0.43231 1.48003,-0.7537 1.81326,-1.0825 0.11211,-0.37398 0.0845,-0.0555 -0.45884,0.94544 -0.12647,0.57583 -0.11862,1.10108 0.035,1.61421 0,0 0,0 0,1e-5 0.19985,0.49615 0.31167,0.76666 0.39219,0.80397 0,0 0,0 0,0 0.0669,-0.0431 -0.41468,-0.19211 -1.2176,-0.68373 0,0 0,0 0,0 -1.22651,-0.61576 -2.67602,-1.12119 -4.28668,-1.65761 -5.82554,-2.10251 -12.20385,-3.77667 -18.91166,-5.50264 -0.7351,-1.10384 -1.47305,-2.21189 -2.21473,-3.32255 -3.26597,-4.89076 -6.47537,-9.63246 -9.69115,-14.1183 -2.16263,-3.19217 -4.06887,-6.10924 -6.22577,-8.34291 -0.64089,-0.6076 -1.00151,-1.03606 -1.20021,-1.1045 -0.10929,0.1717 0.42987,0.083 1.71004,0.0307 1.1448,-0.61055 1.64406,-0.86856 1.52254,-1.06048 -0.10203,0.0295 -0.19232,0.45456 -0.41981,1.14575 -0.63809,2.32243 -0.83951,4.97849 -1.12631,7.7619 0,0 0,0 0,0 -0.4243,4.35193 -0.74994,8.55473 -1.14265,12.52193 -0.51617,5.23075 -1.12792,9.99199 -1.80399,14.17203 -0.67607,4.18005 -1.41449,7.77904 -2.14258,10.70469 -1.4562,5.8513 -2.83081,9.0053 -3.60449,8.86628 -0.77368,-0.13902 -0.86779,-3.53438 -0.73875,-9.45133 0.0645,-2.95848 0.17571,-6.55104 0.27493,-10.69791 0.0992,-4.14686 0.1846,-8.84868 0.24191,-14.02221 0.0419,-3.9172 0.056,-8.14378 0.2167,-12.66688 0,0 0,0 0,0 0.0782,-2.75407 0.18572,-5.85694 0.8818,-9.2692 0.16511,-0.9963 0.55184,-2.28021 1.33978,-3.76876 0.45933,-1.18271 1.79452,-2.37259 4.05899,-3.28527 2.45606,-0.36959 4.25587,-0.0449 5.22827,0.71235 1.56736,0.88755 2.71329,1.85644 3.50469,2.7004 2.99884,2.99147 5.38722,6.33269 7.56362,9.50362 2.59123,4.03002 5.04903,8.25108 7.46357,12.57022 0.54833,0.98085 1.08962,1.95773 1.62538,2.92949 5.65977,0.96171 11.32286,2.06817 16.7317,3.80841 1.78289,0.62435 3.66231,1.37394 5.54236,2.37066 0,0 1e-5,0 1e-5,0 1.11141,0.50202 2.53224,1.45262 3.97981,3.02073 1e-5,0 1e-5,10e-6 1e-5,10e-6 0.52524,0.5563 1.01665,1.41134 1.41735,2.55687 0,0 0,10e-6 1e-5,2e-5 0.32343,1.06231 0.35633,2.1801 0.0982,3.31271 -0.86683,2.36868 -1.97268,3.73605 -2.95684,4.21459 -1.36979,0.99555 -2.65133,1.63661 -3.74855,2.07515 -1.56238,0.66153 -3.07116,1.1735 -4.50057,1.61219 -3.96244,1.22238 -7.72697,2.10445 -11.22838,2.91042 -4.69793,1.08537 -9.02537,2.02129 -12.92745,2.91251 -4.98133,1.14002 -9.25566,2.18946 -12.75564,3.15001 -3.51454,0.97388 -6.21256,1.80797 -8.0944,2.36997 -1.88185,0.56201 -2.97688,0.80171 -3.2185,0.43123 z"
+       id="path3873"
+       inkscape:path-effect="#path-effect3875"
+       inkscape:original-d="m 160,422.36218 c 23,-15 92.1272,-17.28145 29,-31 -33.52525,-54.75414 -19.87926,-19.75834 -29,31 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
