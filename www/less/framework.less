@@ -1,0 +1,49 @@
+
+@footerHeight: 90px;
+
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-bottom: @footerHeight;
+}
+
+#footer {
+    height: @footerHeight;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #FFFFFF;
+    border-top: 1px solid #D4D4D4;
+
+    .banner {
+        height: 111px;
+        background: url(/img/banner.png) no-repeat;
+        margin-top: @footerHeight - 111px;
+    }
+
+    .copyright {
+        padding-top: 25px;
+        padding-right: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #content {
+        padding-bottom: @footerHeight * 2;
+    }
+
+    #footer {
+        height: @footerHeight * 2;
+    }
+
+}
+

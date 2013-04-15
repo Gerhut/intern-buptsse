@@ -3,15 +3,20 @@ append head
   title 北京邮电大学软件学院实习管理系统
 append style
   mixin stylesheet("style/ui.css")
+  mixin stylesheet("style/framework.css")
 append script
 block content
   #wrapper
     #content.container
     #footer
-      p 
-        | Powered by 
-        a(href="http://jquery.com") jQuery 
-        | and 
-        a(href="http://twitter.github.com/bootstrap/") Bootstrap 
-        br
-        | Copyright &copy; shinohane 2013
+      .container
+        .row-fluid
+          .banner.span8
+          .copyright.span4
+            p 
+              | Powered by 
+              a(href="http://jquery.com") jQuery 
+              | and 
+              a(href="http://twitter.github.com/bootstrap/") Bootstrap 
+              br
+              | Copyright &copy; shinohane 2013
