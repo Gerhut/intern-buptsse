@@ -1,12 +1,40 @@
 
-html,
-body {
-    background: #e5e5e5;
-}
-
 ::selection {
     background: #FF5E99;
     color: #fff;
     text-shadow: none;
+}
+
+html,
+body {
+    font-size: 12px;
+    font-family: Tahoma, Helvetica, Arial, DejaVu Sans, sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #e5e5e5;
+}
+
+@footerHeight: 60px;
+
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-bottom: @footerHeight;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: @footerHeight;
+    text-align: center;
+    background: #FFFFFF;
+    padding-top: 20px;
+    border-top: 1px solid #D4D4D4;
 }
 
