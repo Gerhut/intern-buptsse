@@ -1,0 +1,52 @@
+@import "color";
+@import "elements";
+
+#dashboard {
+
+    .announce {
+        margin-bottom: 4px;
+    }
+
+    .profile .photo {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .profile-text {
+        position: relative;
+        padding-top: 16px;
+        padding-right: 12px;
+        text-align: left;
+
+        @label-width: 24px;
+
+        div {
+            padding-left: @label-width;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        div:before {
+            position: absolute;
+            left: -8px;
+            width: @label-width;
+            text-align: right;
+            font-weight: bold;
+            white-space: nowrap;
+            content: attr(data-label);
+        }
+
+        @media (max-width: 767px) {
+            
+            div {
+                padding-left: 50%;
+            }
+
+            div:before {
+                width: 50%;
+            }
+
+        }
+    }
+
+}
