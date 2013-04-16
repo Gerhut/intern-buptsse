@@ -1,10 +1,16 @@
 @import "color";
+@import "framework";
 @import "elements";
 
 #login {
 
-    position: relative;
-    top: 24px;
+    position: absolute;
+    top: 0;
+    bottom: @footerHeight;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 208px;
 
     .boxtitle {
         font-size: 20px;
@@ -16,8 +22,6 @@
     width: 268px;
     border: 1px solid @border-color;
     padding-bottom: 8px;
-
-    margin: auto;
 
     overflow: hidden;
 
@@ -40,4 +44,12 @@
     background: white;
     .rounded(5px);
     .drop-shadow;
+}
+
+@media (max-width: 767px) {
+
+    #login {
+        bottom: @footerHeight * 2;
+    }
+
 }
