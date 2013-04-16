@@ -11,25 +11,26 @@
         div(data-label="编号") #{id}
         div(data-label="电话") #{phone}
     .logout
-      button.btn.btn-inverse.btn-normal(type="button") 注销
+      a.btn.btn-inverse.btn-normal(href="#login") 注销
     ul.nav.nav-list
       li.nav-header 位置
-      li.active: a
+      li#nav-home.active: a(href="#dashboard/home")
         i.icon-home
         | 首页
-      li: a
+      li#nav-position: a(href="#dashboard/position")
         i.icon-th-list
         | 实习职位
-      li: a
+      li#nav-personal: a(href="#dashboard/personal")
         i.icon-user
         | 个人中心
-      li: a
+      li#nav-setting: a(href="#dashboard/setting")
         i.icon-cog
         | 设置
       li.divider
-      li: a
+      li#nav-help: a(href="#dashboard/help")
         i.icon-book
         | 使用手册
 
   .span8
+    include upgrade-alert
 

@@ -15,13 +15,31 @@
         }, 100);
     }
 
-    var hashChanged = function (hash) {
-        var anchor = hash.substring(1);
-        if(anchor) {
-            D(anchor);
-        }
-        return anchor;
-    };
+    var hashChanged = (function () {
+        var section = [];
+        return function (hash) {
+            var anchor = hash.substring(1);
+            if(anchor) {
+                var tasks = [];
+                var _section = anchor.split("/");
+                for(var i = 0; i != _section.length; i++) {
+                    if(section.length > i && section[i] == _section[i]) 
+                        continue;
+                    tasks.push(_section.slice(0, i + 1).join('/'));
+                }
+                var worker = function () {
+                    if(tasks.length > 0) {
+                        D(tasks.shift(), function () {
+                            worker();
+                        });
+                    }
+                };
+                worker();
+                section = _section;
+            }
+            return anchor;
+        };
+    })();
 
     var D = function (script, cb) {
         $.get('/js/' + script + '.js', function (data) {
