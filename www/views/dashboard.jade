@@ -1,5 +1,5 @@
 #dashboard.row-fluid
-  .span4.white-well
+  .sidebar.span4.white-well
     .announce.alert.alert-success
       h4 系统公告
       | 暂无系统公告
@@ -12,6 +12,24 @@
         div(data-label="电话") #{phone}
     .logout
       button.btn.btn-inverse.btn-normal(type="button") 注销
-    
-  .span8.white-well
+    ul.nav.nav-list
+      li.nav-header 位置
+      li.active: a 
+        i.icon-home
+        | 首页
+      li: a 
+        i.icon-th-list
+        | 实习职位
+      li: a 
+        i.icon-user
+        | 个人中心
+      li: a 
+        i.icon-cog
+        | 设置
+      li.divider
+      li: a 
+        i.icon-book
+        | 使用手册
+
+  .span8
 
