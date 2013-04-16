@@ -1,6 +1,8 @@
 
 (function ($) {
 
+    $('#content').children().remove();
+
     $.get('/view/login.js', function (data) {
         $view = $(eval(data)());
         getView($view);

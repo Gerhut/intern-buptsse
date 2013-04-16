@@ -24,7 +24,6 @@
     };
 
     var D = function (script, cb) {
-        $('#content').children().remove();
         $.get('/js/' + script + '.js', function (data) {
             eval(data)($);
             if(cb instanceof Function) cb();
