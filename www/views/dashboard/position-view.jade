@@ -1,0 +1,56 @@
+// For Student - Phase 2, Professor - Phase 2, 3, 4
+.position-view.white-well.clearfix
+  .legend 职位信息
+  table.table.table-bordered.table-striped.table-hover
+    colgroup
+      col.span6
+      col.span6
+    tbody
+      tr
+        td(colspan="2") 
+          h4 基本信息
+      tr
+        td 职位名称
+        td #{title}
+      tr
+        td 所在部门
+        td #{department}
+      tr
+        td 招工人数
+        td #{need}
+      tr
+        td 薪资水平
+        td #{salary}
+      tr
+        td 描述
+        td #{description}
+      tr
+        td(colspan="2") 
+          h4 企业导师信息
+      tr
+        td 姓名
+        td #{tutor.name}
+      tr
+        td 性别
+        td #{tutor.gender}
+      tr
+        td 职务
+        td #{tutor.title}
+      tr
+        td 电话
+        td #{tutor.phone}
+      tr
+        td E-mail
+        td #{tutor.email}
+      tr
+        td(colspan="2") 
+          h4 公司信息
+      tr
+        td 公司名称
+        td #{company.name}
+      tr
+        td 公司首页
+        td #{company.website}
+  .btn-toolbar.pull-right
+    button.btn.btn-large 关闭
+
