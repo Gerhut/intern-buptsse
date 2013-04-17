@@ -10,7 +10,8 @@
 
     var getView = function ($view) {
         $view.children('form').submit(function () {
-            data.role = 'professor';
+            data.role = $('.username input').val();
+            console.log(data.role);
             window.location.hash = "#dashboard";
             return false;
         });
