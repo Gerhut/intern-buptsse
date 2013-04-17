@@ -4,12 +4,24 @@
     $("#dashboard .sidebar ul li").removeClass('active');
     $("#dashboard .sidebar ul li#nav-student").addClass('active');
 
-    $("#task-panel").children().remove();
+    var createView = function () {
+        $("#task-panel").children().remove();
+        $.get('/view/dashboard/student.js', function (code) {
+            $view = $(eval(code)());
+            getView($view);
+            $('tr', $view).click(function () {
+                $("#task-panel").children().remove();
+                $.get('/view/dashboard/intern.js', function (code) {
+                    $view = $(eval(code)());
+                    getView($view);
+                    $('button.btn-large', $view).click(createView);
+                });
+                return false;
+            });
+        });
+    };
 
-    $.get('/view/dashboard/student.js', function (data) {
-        $view = $(eval(data)());
-        getView($view);
-    });
+    createView();
 
     var getView = function ($view) {
         $view.appendTo("#task-panel");
