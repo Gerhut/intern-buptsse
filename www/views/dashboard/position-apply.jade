@@ -1,0 +1,44 @@
+// For Student - Phase 2
+.white-well.clearfix
+  .legend 实习职位申请
+  .alert.alert-info
+    | 下表为所有实习实训职位信息，
+    | 请选择您希望申报的职位
+    br
+    | 在本阶段内，您可以自由的更改已经申报的职位，
+    | 本阶段结束后将不再受理更改
+    br
+    span.label.label-info 提示
+    |  点击条目可查看具体的职位信息
+  table.table.table-bordered.table-striped.table-hover
+    colgroup
+      col.span6
+      col.span2
+      col.span2
+      col.span2
+    thead
+      tr
+        th 职务
+        th 导师
+        th 人数
+        th 发布日期
+    tbody
+      - var position = [{
+      - company: {
+      -   name: "XXXX公司"
+      - },
+      - title: "攻城师",
+      - applied: [{realname: "路人甲", _id: "UserXXX"}],
+      - need: 8,
+      - created_at_str: "2014-02-03",
+      - creator: {
+      -   realname: "厉害的导师"
+      - },
+      - }];
+      each i in position
+        tr
+          td #{i.company.name} - #{i.title}
+          td #{i.creator.realname}
+          td #{i.applied.length} / #{i.need}
+          td #{i.created_at_str}
+            i.icon-chevron-right.pull-right
