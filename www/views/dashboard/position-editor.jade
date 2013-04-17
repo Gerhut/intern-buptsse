@@ -1,0 +1,34 @@
+form.form-horizontal.clearfix
+  fieldset
+    legend 基本信息
+      .control-group
+        label.control-label 职位名称
+        .controls
+          input(type="text", placeholder="核心用户产品调研师")
+      .control-group
+        label.control-label 所在部门
+        .controls
+          input(type="text", placeholder="社会影响事业部")
+      .control-group
+        label.control-label 招工人数
+        .controls
+          input.input-mini(type="text", placeholder="1")
+      .control-group
+        label.control-label 薪资水平
+        .controls
+          .btn-group(data-toggle="buttons-radio")
+            button.btn(type="button") &lt;1000
+            button.btn(type="button") 1000-2000
+            button.btn(type="button").active 2000-3000
+            button.btn(type="button") &gt;3000
+  fieldset
+    legend 公司信息
+      .control-group
+        label.control-label 公司名称
+        .controls
+          input(type="text", placeholder="大公司")
+      .control-group
+        label.control-label 公司首页
+        .controls
+          input(type="text", placeholder="http://foo.bar")
+  button.btn.btn-primary.btn-large.pull-right(type="submit") 提交
