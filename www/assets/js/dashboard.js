@@ -8,6 +8,12 @@
         getView($view);
     }); 
 
+    $("#schedule").remove();
+    $.get('/view/schedule.js', function (code) {
+        $view = $(eval(code)(data));
+        $("#task-panel").before($view);
+    }); 
+
     var getView = function ($view) {
         $view.appendTo("#content");
     };
