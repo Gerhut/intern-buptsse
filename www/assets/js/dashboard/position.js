@@ -17,12 +17,22 @@
     });
 
     $.get('/view/dashboard/position-apply.js', function (data) {
-        $view = $(eval(data)());
+        $view = $(eval(data)({role: 'student'}));
+        getView($view);
+    });
+
+    $.get('/view/dashboard/position-apply.js', function (data) {
+        $view = $(eval(data)({role: 'professor'}));
         getView($view);
     });
 
     $.get('/view/dashboard/position-enroll.js', function (data) {
-        $view = $(eval(data)());
+        $view = $(eval(data)({phase: 3}));
+        getView($view);
+    });
+
+    $.get('/view/dashboard/position-enroll.js', function (data) {
+        $view = $(eval(data)({phase: 4}));
         getView($view);
     });
 

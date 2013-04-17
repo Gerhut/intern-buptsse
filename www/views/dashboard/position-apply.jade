@@ -1,6 +1,5 @@
 // For Student - Phase 2, Professor - Phase 2
 .white-well.clearfix
-  - var role = 'student'
   if role == 'student'
     .legend 实习职位申请
     .alert.alert-info
@@ -27,7 +26,8 @@
     thead
       tr
         th 职务
-        th 导师
+        if role == 'student'
+          th 导师
         th 人数
         th 发布日期
     tbody
@@ -46,7 +46,8 @@
       each i in position
         tr
           td #{i.company.name} - #{i.title}
-          td #{i.creator.realname}
+          if role == 'student'
+            td #{i.creator.realname}
           td #{i.applied.length} / #{i.need}
           td #{i.created_at_str}
             i.icon-chevron-right.pull-right

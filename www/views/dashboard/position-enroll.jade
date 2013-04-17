@@ -1,6 +1,5 @@
 // For Professor - Phase 3, 4
 .white-well.clearfix
-  - var phase = 3
   if phase == 3
     .legend 实习职位确认
     .alert.alert-info
@@ -26,7 +25,6 @@
     thead
       tr
         th 职务
-        th 导师
         th 人数
         th 发布日期
     tbody
@@ -45,7 +43,6 @@
       each i in position
         tr
           td #{i.company.name} - #{i.title}
-          td #{i.creator.realname}
           td #{i.applied.length} / #{i.need}
           td #{i.created_at_str}
             i.icon-chevron-right.pull-right
