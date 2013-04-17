@@ -1,0 +1,37 @@
+// For Professor - Phase 1
+.white-well.clearfix
+  h4 实习职位发布
+  .alert.alert-info
+    | 下表列出了您发布的所有实习实训职位信息，
+    | 您可以通过点击上面的新建按钮进行添加，
+    | 也可以对已有的项目进行编辑
+    br
+    span.label.label-info 注意
+    |  职位准备阶段结束之后将不能更改下表的信息
+  .btn-toolbar.clearfix
+    button.btn.btn-primary.pull-right 新职位
+  table.table.table-bordered.table-striped.table-hover
+    colgroup
+      col.span8
+      col.span2
+      col.span2
+    thead
+      tr
+        th 职务
+        th 人数
+        th 发布日期
+    tbody
+      - var position = [{
+      - company: {
+      -   name: "XXXX公司"
+      - },
+      - title: "攻城师",
+      - need: 8,
+      - created_at_str: "2014-02-03"
+      - }];
+      each i in position
+        tr
+          td #{i.company.name} - #{i.title}
+          td #{i.need}
+          td #{i.created_at_str}
+            i.icon-chevron-right.pull-right
