@@ -1,2 +1,46 @@
 .white-well
-  .legend 设置
+  form.form-horizontal.clearfix
+    fieldset
+      .legend 基本信息
+      .control-group
+        label.control-label 姓名
+        .controls
+          input.disable(type="text", disabled)
+      .control-group
+        label.control-label 编号
+        .controls
+          input.disable(type="text", disabled)
+      .control-group
+        label.control-label E-mail
+        .controls
+          input.disable(type="text", disabled)
+      .control-group
+        label.control-label 头像
+        .controls
+          a(href="http://gravatar.com/emails/", target="_blank", data-toggle="tooltip", title="通过Gravatar修改头像")
+            img.img-polaroid(src="#{photo}")
+      .control-group
+        label.control-label 电话
+        .controls
+          input.disable(type="text")
+    fieldset
+      .legend 相关资料
+      .control-group
+        label.control-label 个人简历
+        .controls
+          .fileupload.fileupload-new(data-provides="fileupload")
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new 选择文件
+                span.fileupload-exists 更改
+                input(type="file")
+              a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
+          button(type="button").btn 
+            i.icon-download-alt
+            | 下载简历
+  
+    .btn-toolbars.pull-right
+      button.btn.btn-primary.btn-large(type="submit") 保存
