@@ -1,3 +1,30 @@
 // Professor - Phase 5, 6
 .white-well
   .legend 学生管理
+  .alert.alert-info
+    span.label.label-info 提示
+    |  点击学生条目进入该学生的实习主页
+  table.table.table-bordered.table-striped.table-hover
+    colgroup
+      col.span4
+      col.span8
+    thead
+      tr
+        th 学生
+        th 实习职位
+    tbody
+      - var student = [{
+      - realname: "王XX",
+      - job: {
+      -   company: {
+      -     name: "XXXX公司"
+      -   },
+      -   title: "攻城师",
+      -   need: 8,
+      -   created_at_str: "2014-02-03"
+      - }}];
+      each i in student
+        tr
+          td #{i.realname}
+          td #{i.job.company.name} - #{i.job.title}
+            i.icon-chevron-right.pull-right
