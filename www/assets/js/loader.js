@@ -44,8 +44,8 @@
     })();
 
     var D = function (script, cb) {
-        $.get('/js/' + script + '.js', function (data) {
-            eval(data)(data, $);
+        $.get('/js/' + script + '.js', function (code) {
+            eval(code)(data, $);
             if(cb instanceof Function) cb();
         });
     };

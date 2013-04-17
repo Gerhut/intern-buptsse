@@ -3,8 +3,8 @@
 
     $('#content').children().remove();
 
-    $.get('/view/login.js', function (data) {
-        $view = $(eval(data)());
+    $.get('/view/login.js', function (code) {
+        $view = $(eval(code)());
         getView($view);
     }); 
 
