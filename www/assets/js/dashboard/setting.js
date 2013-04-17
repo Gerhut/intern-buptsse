@@ -13,6 +13,9 @@
 
     var getView = function ($view) {
         $view.appendTo("#task-panel");
+        $view.children("form").submit(function () {
+            return false;
+        });
     };
 
 });
