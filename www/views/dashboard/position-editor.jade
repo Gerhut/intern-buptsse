@@ -1,6 +1,8 @@
-form.form-horizontal.clearfix
-  fieldset
-    legend 基本信息
+// For Professor - Phase 1
+.white-well
+  form.form-horizontal.clearfix
+    fieldset
+      .legend 基本信息
       .control-group
         label.control-label 职位名称
         .controls
@@ -21,8 +23,36 @@ form.form-horizontal.clearfix
             button.btn(type="button") 1000-2000
             button.btn(type="button").active 2000-3000
             button.btn(type="button") &gt;3000
-  fieldset
-    legend 公司信息
+      .control-group
+        label.control-label 描述
+        .controls
+          textarea.input-xlarge(rows="6")
+    fieldset
+      .legend 企业导师信息
+      .control-group
+        label.control-label 姓名
+        .controls
+          input(type="text", placeholder="路人甲")
+      .control-group
+        label.control-label 性别
+        .controls
+          .btn-group(data-toggle="buttons-radio")
+            button.btn(type="button") 先生
+            button.btn(type="button") 女士
+      .control-group
+        label.control-label 职务
+        .controls
+          input(type="text", placeholder="首席前端攻城师")
+      .control-group
+        label.control-label 电话
+        .controls
+          input(type="text", placeholder="010-62289929")
+      .control-group
+        label.control-label E-mail
+        .controls
+          input(type="email", placeholder="foo@bar.com")
+    fieldset
+      .legend 公司信息
       .control-group
         label.control-label 公司名称
         .controls
@@ -31,4 +61,7 @@ form.form-horizontal.clearfix
         label.control-label 公司首页
         .controls
           input(type="text", placeholder="http://foo.bar")
-  button.btn.btn-primary.btn-large.pull-right(type="submit") 提交
+    .btn-toolbars.pull-right
+      button.btn.btn-primary.btn-large(type="submit") 提交
+      | &nbsp;
+      button.btn.btn-large(type="submit") 关闭
