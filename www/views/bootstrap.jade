@@ -13,11 +13,13 @@ html
         mixin stylesheet("bt/css/bootstrap.css")
         mixin stylesheet("bt/css/bootstrap-responsive.css")
         mixin stylesheet("bt/css/datepicker.css")
+        mixin stylesheet("bt/css/bootstrap-fileupload.css")
   body
     block content
     block script
       mixin javascript("js/jquery.min.js")
       mixin javascript("bt/js/bootstrap-datepicker.js")
       mixin javascript("bt/js/bootstrap-button.js")
+      mixin javascript("bt/js/bootstrap-fileupload.js")
       //- Jade-Runtime
       mixin javascript("runtime.min.js")
