@@ -42,7 +42,19 @@
         .controls
           .textfield 010-62281923
     fieldset
-      .legend 报告上传
+      .legend 实习文档
+      .control-group
+        label.control-label 实习承诺书
+        .controls
+          a(href="/file/0-commit.doc", target="_blank").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+      .control-group
+        label.control-label 实习志愿书
+        .controls
+          a(href="/file/1-will.doc", target="_blank").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
       .control-group
         label.control-label 企业导师确认表
         .controls
@@ -56,7 +68,7 @@
                 span.fileupload-exists 更改
                 input(type="file")
               a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
-          button(type="button").btn.btn-primary
+          a(href="/file/2-enrollment.docx", target="_blank").btn.btn-primary
             i.icon-download.icon-white
             | 下载模板
           | &nbsp;
@@ -76,7 +88,7 @@
                 span.fileupload-exists 更改
                 input(type="file")
               a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
-          button(type="button").btn.btn-primary
+          a(href="/file/3-weekly.docx", target="_blank").btn.btn-primary
             i.icon-download.icon-white
             | 下载模板
           | &nbsp;
@@ -96,7 +108,7 @@
                 span.fileupload-exists 更改
                 input(type="file")
               a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
-          button(type="button").btn.btn-primary
+          a(href="/file/3-weekly.docx", target="_blank").btn.btn-primary
             i.icon-download.icon-white
             | 下载模板
           | &nbsp;
@@ -116,13 +128,25 @@
                 span.fileupload-exists 更改
                 input(type="file")
               a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
-          button(type="button").btn.btn-primary
+          a(href="/file/5-summary.docx", target="_blank").btn.btn-primary
             i.icon-download.icon-white
             | 下载模板
           | &nbsp;
           button(type="button", disabled).btn
             i.icon-download-alt
             | 下载当前版本
+      .control-group
+        label.control-label 导师周报
+        .controls
+          a(href="/file/4-tutor-weekly.docx", target="_blank").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+      .control-group
+        label.control-label 企业实习证明
+        .controls
+          a(href="/file/6-cridential.docx", target="_blank").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
     .btn-toolbars.pull-right
       button.btn.btn-primary.btn-large(type="submit") 保存
       | &nbsp;
