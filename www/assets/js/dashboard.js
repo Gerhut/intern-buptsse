@@ -4,7 +4,7 @@
     $('#content').children().remove();
 
     $.get('/view/dashboard.js', function (code) {
-        $view = $(eval(code)(data.profile));
+        $view = $(eval(code)(data));
         getView($view);
     }); 
 

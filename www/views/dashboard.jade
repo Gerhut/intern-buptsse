@@ -5,12 +5,12 @@
       | 暂无系统公告
     .profile.row-fluid
       .photo.span6
-        img.img-polaroid(src="#{photo}")
+        img.img-polaroid(src="#{profile.photo}")
       .profile-text.span6
-        div(data-label="姓名") #{realname}
-        div(data-label="编号") #{id}
-        div(data-label="电话") #{phone}
-        div(data-label="邮箱") #{email}
+        div(data-label="姓名") #{profile.realname}
+        div(data-label="编号") #{profile.id}
+        div(data-label="电话") #{profile.phone}
+        div(data-label="邮箱") #{profile.email}
     .logout
       a.btn.btn-inverse.btn-normal(href="#login") 注销
     ul.nav.nav-list
