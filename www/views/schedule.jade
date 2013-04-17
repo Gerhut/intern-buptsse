@@ -3,13 +3,12 @@
     h4 系统进度
   .span8
     .btn-group(data-toggle="buttons-radio")
-      - var phases = [". 职位准备", ". 实习申报", ". 导师确认", ". 导师调剂", ". 正式实习", ". 导师评分", ". 实习结束"];
       for lbl, i in phases
         - var c = i + 1;
         - if(c > phase) {
-          button.btn(data-label="#{lbl}") #{c}
+          button.btn(data-label=". #{lbl}") #{c}
         - } else if(c < phase) {
-          button.btn(data-label="#{lbl}").btn-success #{c}
+          button.btn(data-label=". #{lbl}").btn-success #{c}
         - } else {
-          button.btn(data-label="#{lbl}").btn-primary.active #{c}
+          button.btn(data-label=". #{lbl}").btn-primary.active #{c}
         - }
