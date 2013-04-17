@@ -1,21 +1,21 @@
-// For Student - Phase 2, Professor - Phase 2
+// For Professor - Phase 3, 4
 .white-well.clearfix
-  if role == 'student'
-    .legend 实习职位申请
-    .alert.alert-info
-      | 下表为所有实习实训职位信息，
-      | 请选择您希望申报的职位
-      br
-      | 在本阶段内，您可以自由的更改已经申报的职位，
-      | 本阶段结束后将不再受理更改
-      br
-      span.label.label-info 提示
-      |  点击条目可查看具体的职位信息
-  else if role == 'professor'
-    .legend 实习职位申请
+  - var phase = 3
+  if phase == 3
+    .legend 实习职位确认
     .alert.alert-info
       | 下表列出了您发布的所有实习实训职位信息，
-      | 点击条目查看志愿实习的学生
+      | 点击条目查看志愿实习的学生，
+      | 您可以在这里通过学生的实习申请
+      br
+      span.label.label-info 提示
+      |  对于本阶段空缺的职位，
+      |  可以在下一个阶段选择学生进行调剂
+  else if phase == 4
+      .legend 实习职位调剂
+      .alert.alert-info
+        | 以下是您名下所有职位，
+        | 您可以为未满员的职位指定学生进行
 
   table.table.table-bordered.table-striped.table-hover
     colgroup
