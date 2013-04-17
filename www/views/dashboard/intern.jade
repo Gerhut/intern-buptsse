@@ -1,3 +1,129 @@
 // Student - Phase 2, 3, 4, 5, 6, 7
-.white-well
-  .legend 实习信息
+.intern.white-well
+  form.form-horizontal.clearfix
+    fieldset
+      .legend 个人信息
+      .control-group
+        label.control-label 姓名
+        .controls
+          .textfield XXX
+      .control-group
+        label.control-label 编号
+        .controls
+          .textfield 1020394
+      .control-group
+        label.control-label E-mail
+        .controls
+          a(href="mailto:").textfield foo@bar.com
+      .control-group
+        label.control-label 电话
+        .controls
+          .textfield 010-12345678
+    fieldset
+      .legend 实习情况
+      .control-group
+        label.control-label 职位
+        .controls
+          .textfield XXX公司 - 软件攻城师
+          | &nbsp;
+          .label.label-important 申请中
+          .label.label-info 已通过
+          .label.label-success 实习中
+      .control-group
+        label.control-label 企业导师
+        .controls
+          .textfield 很厉害的导师
+      .control-group
+        label.control-label 导师邮箱
+        .controls
+          a(href="mailto:").textfield foo@bar.com
+      .control-group
+        label.control-label 导师电话
+        .controls
+          .textfield 010-62281923
+    fieldset
+      .legend 报告上传
+      .control-group
+        label.control-label 企业导师确认表
+        .controls
+          .fileupload.fileupload-new(data-provides="fileupload")
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new 选择文件
+                span.fileupload-exists 更改
+                input(type="file")
+              a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
+          button(type="button").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+          | &nbsp;
+          button(type="button", disabled).btn
+            i.icon-download-alt
+            | 下载当前版本
+      .control-group
+        label.control-label 第一周周报
+        .controls
+          .fileupload.fileupload-new(data-provides="fileupload")
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new 选择文件
+                span.fileupload-exists 更改
+                input(type="file")
+              a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
+          button(type="button").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+          | &nbsp;
+          button(type="button", disabled).btn
+            i.icon-download-alt
+            | 下载当前版本
+      .control-group
+        label.control-label 第二周周报
+        .controls
+          .fileupload.fileupload-new(data-provides="fileupload")
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new 选择文件
+                span.fileupload-exists 更改
+                input(type="file")
+              a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
+          button(type="button").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+          | &nbsp;
+          button(type="button", disabled).btn
+            i.icon-download-alt
+            | 下载当前版本
+      .control-group
+        label.control-label 实习总结表
+        .controls
+          .fileupload.fileupload-new(data-provides="fileupload")
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new 选择文件
+                span.fileupload-exists 更改
+                input(type="file")
+              a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
+          button(type="button").btn.btn-primary
+            i.icon-download.icon-white
+            | 下载模板
+          | &nbsp;
+          button(type="button", disabled).btn
+            i.icon-download-alt
+            | 下载当前版本
+    .btn-toolbars.pull-right
+      button.btn.btn-primary.btn-large(type="submit") 保存
+      | &nbsp;
+      button.btn.btn-large(type="button") 关闭
