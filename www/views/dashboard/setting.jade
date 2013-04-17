@@ -5,24 +5,24 @@
       .control-group
         label.control-label 姓名
         .controls
-          input.disable(type="text", disabled)
+          input.disable(type="text", disabled, value="#{profile.realname}")
       .control-group
         label.control-label 编号
         .controls
-          input.disable(type="text", disabled)
+          input.disable(type="text", disabled, value="#{profile.id}")
       .control-group
         label.control-label E-mail
         .controls
-          input.disable(type="text", disabled)
+          input.disable(type="text", disabled, value="#{profile.email}")
       .control-group
         label.control-label 头像
         .controls
           a(href="http://gravatar.com/emails/", target="_blank", data-toggle="tooltip", title="通过Gravatar修改头像")
-            img.img-polaroid(src="#{photo}")
+            img.img-polaroid(src="#{profile.photo}")
       .control-group
         label.control-label 电话
         .controls
-          input.disable(type="text")
+          input.disable(type="text", value="#{profile.phone}")
     fieldset
       .legend 相关资料
       .control-group
@@ -38,7 +38,7 @@
                 span.fileupload-exists 更改
                 input(type="file")
               a(href="#", data-dismiss="fileupload").btn.fileupload-exists 取消
-          button(type="button").btn 
+          button(type="button", disabled).btn 
             i.icon-download-alt
             | 下载简历
   
