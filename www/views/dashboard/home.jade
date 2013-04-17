@@ -1,8 +1,15 @@
 .white-well
   .legend 实习工作表
-  .alert.alert-info
-    strong 实习申报阶段
-    |  是您的用户操作阶段，请按照工作表的计划进行您的操作
+  - if(("professor" == role && [1, 3, 4, 6].indexOf(phase) > -1) || 
+  -    ("student" == role   && [2, 5].indexOf(phase) > -1)) {
+    .alert.alert-success
+      strong #{phases[phase - 1]}
+      |  是您的用户操作阶段，请按照工作表的计划进行您的操作
+  - } else {
+    .alert.alert-info
+      strong #{phases[phase - 1]}
+      |  不是您的用户操作阶段，但您能够查看相关的系统信息
+  - }
   table.table.table-bordered.table-striped.table-hover
     colgroup
       col.span2
