@@ -53,6 +53,18 @@
     window.D = D;
 
     $(document).ready(function () {
+        _(data).extend({
+            phase: 1,
+            role: 'student',
+            profile: {
+                id: "10212002",
+                realname: "王小二",
+                email: "trinity@dummi.org",
+                phone: "010-62289905"
+            }
+        });
+        data.profile.photo = "http://www.gravatar.com/avatar/" + MD5(data.profile.email);
+
         if(!hashChanged(window.location.hash)) D('login');
     });
 
