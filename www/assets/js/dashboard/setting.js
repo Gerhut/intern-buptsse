@@ -1,5 +1,5 @@
 
-(function ($) {
+(function (data, $) {
 
     $("#dashboard .sidebar ul li").removeClass('active');
     $("#dashboard .sidebar ul li#nav-setting").addClass('active');

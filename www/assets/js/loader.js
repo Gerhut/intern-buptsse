@@ -1,6 +1,8 @@
 
 !(function (window, $) {
 
+    var data = {};
+
     if ("onhashchange" in window) { // event supported?
         window.onhashchange = function () {
             hashChanged(window.location.hash);
@@ -43,7 +45,7 @@
 
     var D = function (script, cb) {
         $.get('/js/' + script + '.js', function (data) {
-            eval(data)($);
+            eval(data)(data, $);
             if(cb instanceof Function) cb();
         });
     };

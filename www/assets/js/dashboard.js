@@ -1,9 +1,7 @@
 
-(function ($) {
+(function (data, $) {
 
     $('#content').children().remove();
-
-    var role = "student";
 
     $.get('/view/dashboard.js', function (data) {
         $view = $(eval(data)({

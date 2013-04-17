@@ -1,5 +1,5 @@
 
-(function ($) {
+(function (data, $) {
 
     $('#content').children().remove();
 
