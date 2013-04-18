@@ -51,6 +51,41 @@
       tr
         td 公司首页
         td #{company.website}
+      if phase == 3
+        tr
+          td 申请人
+          td#job-appliers
+            a(href="#") 张三
+            | &nbsp;
+            a(href="#") 李四
+            | &nbsp;
+            a(href="#") 王五
+            | &nbsp;
+            a(href="#") 马六
+      if phase == 4
+        tr
+          td 可调剂
+          td#job-adjust
+            a(href="#") 路人甲
+            | &nbsp;
+            a(href="#") 路人一
+            | &nbsp;
+            a(href="#") 路人丙
+            | &nbsp;
+            a(href="#") 路人丁
+      tr
+        td 已确认
+        if phase == 3
+          td#job-enrolled
+        if phase == 4
+          td#job-enrolled
+            a(href="#") 张三
+            | &nbsp;
+            a(href="#") 李四
+            | &nbsp;
+            a(href="#") 王五
   .btn-toolbar.pull-right
+    if phase == 3 || phase == 4
+      button.btn.btn-primary.btn-large 保存
     button.btn.btn-large 关闭
 

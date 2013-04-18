@@ -75,8 +75,10 @@
 
     var viewJob = function (cb) {
         clearView();
-        $.get('/view/dashboard/position-view.js', function (data) {
-            $view = $(eval(data)({
+        $.get('/view/dashboard/position-view.js', function (code) {
+            $view = $(eval(code)({
+                phase: data.phase,
+                role: data.role,
                 title: "软件攻城师",
                 department: "宇宙研究部门",
                 need: "20",
@@ -96,6 +98,16 @@
             }));
             displayView($view);
             $('button', $view).click(cb);
+            $('#job-appliers a', $view).click(function () {
+                $('#job-enrolled').append(" ")
+                $(this).remove().appendTo('#job-enrolled');
+                return false;
+            });
+            $('#job-adjust a', $view).click(function () {
+                $('#job-enrolled').append(" ")
+                $(this).remove().appendTo('#job-enrolled');
+                return false;
+            });
         });
     };
 
