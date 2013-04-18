@@ -12,7 +12,7 @@
             $('tr', $view).click(function () {
                 $("#task-panel").children().remove();
                 $.get('/view/dashboard/intern.js', function (code) {
-                    $view = $(eval(code)());
+                    $view = $(eval(code)(data));
                     getView($view);
                     $('button.btn-large', $view).click(createView);
                 });

@@ -147,7 +147,27 @@
           a(href="/file/6-cridential.docx", target="_blank").btn.btn-primary
             i.icon-download.icon-white
             | 下载模板
+    - if(phase == 7) {
+      fieldset
+        .legend 实习成绩
+        .control-group
+          label.control-label 导师打分
+          .controls
+            .textfield 86
+    - } else if("professor" == role && phase == 6) {
+      fieldset
+        .legend 实习成绩
+        .control-group
+          label.control-label 导师打分
+          .controls
+            input.input-mini(type="text", placeholder="0-100")
+    - }
     .btn-toolbars.pull-right
-      button.btn.btn-primary.btn-large(type="submit") 保存
-      | &nbsp;
+      if role == 'student'
+        button.btn.btn-primary.btn-large(type="submit") 保存
+        | &nbsp;
+      - if("professor" == role && phase == 6) {
+          button.btn.btn-primary.btn-large(type="submit") 保存
+          | &nbsp;
+      - }
       button.btn.btn-large(type="button") 关闭
