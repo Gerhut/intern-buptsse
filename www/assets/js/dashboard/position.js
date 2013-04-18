@@ -18,7 +18,7 @@
         var loadJobList = function () {
             clearView();
             $.get('/view/dashboard/position-manage.js', function (code) {
-                $view = $(eval(code)(data.jobs));
+                $view = $(eval(code)(data));
                 displayView($view);
                 $("button", $view).click(createJob);
                 $("tr", $view).click(createJob);
@@ -30,7 +30,19 @@
             $.get('/view/dashboard/position-editor.js', function (code) {
                 $view = $(eval(code)({}));
                 displayView($view);
-                $("button.btn-large", $view).click(loadJobList);
+                $("button.btn-large", $view).click(function () {
+                    data.jobs.push({
+                        company: {
+                            name: $('#company-name').val(),
+                        },
+                        title: $('#job-title').val(),
+                        need: parseInt($('#job-need').val()),
+                        created_at_str: '2013-04-18',
+                        creator: data.profile.realname,
+                    });
+                    loadJobList();
+                    return false;
+                });
             });
             return false;
         };

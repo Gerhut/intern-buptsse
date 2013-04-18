@@ -59,9 +59,19 @@
             profile: {
                 id: "10212002",
                 realname: "王小二",
-                email: "trinity@dummi.org",
+                email: "myemailaddress@example.com",
                 phone: "010-62289905"
             },
+            jobs: [{
+                company: {
+                    name: "XXXX公司"
+                },
+                title: "攻城师",
+                need: 8,
+                created_at_str: "2014-02-03",
+                creator: ""
+            }],
+
             phases: ["职位准备", "实习申报", "导师确认", "导师调剂", "正式实习", "导师评分", "实习结束"],
         });
         data.profile.photo = "http://www.gravatar.com/avatar/" + MD5(data.profile.email);

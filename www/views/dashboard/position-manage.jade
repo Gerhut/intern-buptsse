@@ -21,15 +21,7 @@
         th 人数
         th 发布日期
     tbody
-      - var position = [{
-      - company: {
-      -   name: "XXXX公司"
-      - },
-      - title: "攻城师",
-      - need: 8,
-      - created_at_str: "2014-02-03"
-      - }];
-      each i in position
+      each i in jobs
         tr
           td #{i.company.name} - #{i.title}
           td #{i.need}
