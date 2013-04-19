@@ -1,7 +1,10 @@
 
 !(function (window, $) {
 
-    var data = {};
+    var data = {
+        // Constants
+        phases: ["职位准备", "实习申报", "导师确认", "导师调剂", "正式实习", "导师评分", "实习结束"],
+    };
 
     if ("onhashchange" in window) { // event supported?
         window.onhashchange = function () {
@@ -71,8 +74,6 @@
                 created_at_str: "2014-02-03",
                 creator: ""
             }],
-
-            phases: ["职位准备", "实习申报", "导师确认", "导师调剂", "正式实习", "导师评分", "实习结束"],
         });
         data.profile.photo = "http://www.gravatar.com/avatar/" + MD5(data.profile.email);
 
