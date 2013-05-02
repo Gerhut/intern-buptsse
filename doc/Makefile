@@ -19,9 +19,9 @@ assets: assets/bootstrap.css assets/cref.js assets/docs.css assets/jquery.min.js
 
 tar: doc.tar.gz
 
-doc.tar.gz: all assets *.nb graph
+doc.tar.gz: all assets 
 	@echo "Archive..."
-	@tar -czvf doc.tar.gz html/* assets/* *.md
+	@tar -czvf doc.tar.gz html/* assets/* img/* *.md
 
 clean:
 	rm -rf html doc.tar.gz
