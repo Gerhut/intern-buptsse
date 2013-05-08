@@ -54,61 +54,76 @@ MongoDB数据库服务亦可使用其他数据库代替，考虑到系统数据�
 
 --------------------
 
-技术架构
---------
+服务器技术架构
+--------------
 
 以下是服务器部分所使用的具体技术框架
 
-* 服务器前端: [Nginx](http://nginx.org)
+### 服务器前端
 
-* 逻辑服务器: [Node.js](http://nodejs.org)
+[Nginx](http://nginx.org)
 
-  Node.js具有异步I/O的能力，对于数据密集型的网页应用有非常好的处理能力。
-  Node.js的包管理系统npm生态圈内提供了众多服务器测试、前端测试等技术支持，
-  能够快速的对服务器、客户端进行开发。
+### 逻辑服务器
 
-  + [Express.js](http://expressjs.com)服务器框架
+[Node.js](http://nodejs.org)
 
-  + [Mocha](http://visionmedia.github.io/mocha/)测试框架+[Chai](http://chaijs.com)断言库
+Node.js具有异步I/O的能力，对于数据密集型的网页应用有非常好的处理能力。
+Node.js的包管理系统npm生态圈内提供了众多服务器测试、前端测试等技术支持，
+能够快速的对服务器、客户端进行开发。
 
-  逻辑服务器的开发方式可采用Behavior Driven Development(BDD)开发形式，
-  Express.js框架为此具有很好的可测试性。
+* [Express.js](http://expressjs.com)服务器框架
 
-* 缓存服务器: [Redis](http://redis.io)
+* [Mocha](http://visionmedia.github.io/mocha/)测试框架+[Chai](http://chaijs.com)断言库
 
-  Redis是一个高效的键值数据库(K-V DB)，多用于缓存与session管理，
-  支持基于代理模式的集群实现，是分布式系统通信的良好解决方案。
+逻辑服务器的开发方式可采用Behavior Driven Development(BDD)开发形式，
+Express.js框架为此具有很好的可测试性。
 
-* 数据库服务: [MongoDB](http://mongodb.org)
+### 缓存服务器
 
-客户端拟采用的部分技术框架
+[Redis](http://redis.io)
 
-* 界面框架: [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
+Redis是一个高效的键值数据库(K-V DB)，多用于缓存与session管理，
+支持基于代理模式的集群实现，是分布式系统通信的良好解决方案。
 
-* 加载器  : [Sea.js](http://seajs.org/)
+### 数据库服务
 
-  前端界面将编译为javascript函数模块，客户端逻辑通过加载器对这些模块进行
-  加载组装从而组成界面。
+[MongoDB](http://mongodb.org)
 
-* 前端测试: Mocha+Chai
+客户端技术框架
+--------------
 
-  前端测试还可以选择下列虚拟测试环境进行自动化测试
+### 界面框架
 
-  + [PhantomJS](http://phantomjs.org/) 虚拟测试环境
+[Twitter Bootstrap](http://twitter.github.io/bootstrap/)
 
-* 界面开发工具
+### 加载器  
 
-  前端界面HTML部分的开发工具可选的模板引擎
+[Sea.js](http://seajs.org/)
 
-  + [Jade](http://jade-lang.com)
-  + [EJS](http://embeddedjs.com/)
-  + 其他能够编译为javascript函数模块的模板语言
+前端界面将编译为javascript函数模块，客户端逻辑通过加载器对这些模块进行
+加载组装从而组成界面。
 
-  前端CSS开发可选用的预处理工具
+### 前端测试
 
-  + [LESS](http://lesscss.net)
-  + [SCSS](http://sass-lang.com)
-  + [Stylus](http://learnboost.github.io/stylus/)
+Mocha+Chai
 
-  界面样式也可以直接使用CSS进行构建
+前端测试还可以选择下列虚拟测试环境进行自动化测试
+
+* [PhantomJS](http://phantomjs.org/) 虚拟测试环境
+
+### 界面开发工具
+
+前端界面HTML部分的开发工具可选的模板引擎
+
+* [Jade](http://jade-lang.com)
+* [EJS](http://embeddedjs.com/)
+* 其他能够编译为javascript函数模块的模板语言
+
+前端CSS开发可选用的预处理工具
+
+* [LESS](http://lesscss.net)
+* [SCSS](http://sass-lang.com)
+* [Stylus](http://learnboost.github.io/stylus/)
+
+界面样式也可以直接使用CSS进行构建
 
