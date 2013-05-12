@@ -10,7 +10,7 @@
 * 实习结束  
 #2.用例    
 ##2.1用例图    
-###2.1.1学生用例图  
+###2.1.1学生用例图   
 ![student use case](../img/student.png)  
 ###2.1.2老师用例图  
 ![student use case](../img/teacher.png)  
